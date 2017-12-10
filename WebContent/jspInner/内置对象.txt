@@ -1,0 +1,25 @@
+jsp的9个内置对象：
+1.application
+2.config
+3.exception
+4.out
+5.page
+6.pageContext
+7.request
+8.response
+9.session
+
+问题：Jsp和Servlet之间如何交换数据？为了解决这个问题几乎所有的服务器（java,asp,php,ruby）都会提供application,session,request,page这四个类。
+application:对于整个web应用有效，一旦jsp，servlet将数据放入application中，该数据将可以被该应用下所有其他的jsp，servlet访问。
+session:仅对一次回话有效，一旦jsp，servlet将数据放入session中，该数据将可以被本次会话的其他所有的jsp，servlet访问。
+request：仅对本次请求有效，一旦jsp，servlet将数据放入request中，该数据将可以被该次请求的其他所有的jsp，servlet访问。
+page：仅对当前页面有效，一旦jsp，servlet将数据放入page中，该数据只可以被当前页面jsp脚本，声明部分访问。
+
+
+pageContext对象：
+这个对象代表页面上下文，该对象主要用于访问jsp之间的共享数据。使用pageContext可以访问page,request,session,application范围的变量。
+pageContext 是PageContext的实例，它提供了getAttribute(String name),getAttribute(String name,int scope),scope有如下4个值：
+PageContext.PAGE_SCOPE：对应于page范围;
+PageContext.REQUEST_SCOPE：对应于request范围;
+PageContext.SESSION_SCOPE：对应于session范围;
+PageContext.APPLICATION_SCOPE：对应于application范围;

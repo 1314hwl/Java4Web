@@ -1,0 +1,9 @@
+Servlet:
+jsp的本质是sevlet,sevlet通常被称为服务器端小程序，是运行在服务器端的程序，用于处理响应客户端的请求。
+Sevlet是特殊的java类，这个java类必须继承HttpServlet。每个Servlet可以响应客户端的请求，Servlet提供不同的方法用于响应客户端请求。
+doGet,doPost,doPut,doDelete;
+事实上客户端的请求通常只有get和post两种，大部分时候Servlet对应所有请求的响应都是完全一样的。此时，可以采用重写一个方法来代替上面的几种方法：只需重写service()就可以响应客户端的所有请求。
+另外HttpServlet还包含两个方法：
+init(ServletConfig config):创建servlet实例时，调用该方法的初始化servlet资源。
+destory():销毁servlet实例时，自动调用该方法的回收资源。
+通常无须重写init()和destroy()两个方法，除非需要在初始化servlet时，完成某些资源初始化的方法，才考虑重写init(),如果需要在销毁servlet之前，先完成某些资源的回收，比如关闭数据库连接等，才需要重写destory()方法。
