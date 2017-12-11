@@ -7,8 +7,8 @@
 <title>收集参数的表页</title>
 </head>
 <body>
-<!-- action 中对应的是servlet中的urlPatterns -->
-	<form id="form1" method="post" action="aa">
+	<!-- action 中对应的是servlet中的urlPatterns -->
+	<form id="form1" method="post" action="formServlet">
 		用户名:<br /> <input type="text" name="name">
 		<hr />
 		性别:<br /> 男:<input type="radio" name="gender" value="男"> 女:<input

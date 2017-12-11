@@ -10,7 +10,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 
-@WebServlet(name = "firstServlet", urlPatterns = { "/firstServlet" })
 public class FirstServlet extends HttpServlet {
 
     // 客户端的响应方法，使用该方法可以响应客户端所有类型的请求
