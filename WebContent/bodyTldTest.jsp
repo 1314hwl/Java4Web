@@ -10,6 +10,6 @@
 <body>
 	<bodyTld:query driver="com.mysql.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/java4web" username="root"
-		password="123456" sql="select * from user"></bodyTld:query>
+		password="654321" sql="select * from user"></bodyTld:query>
 </body>
 </html>

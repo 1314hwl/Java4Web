@@ -12,7 +12,7 @@ import com.mysql.jdbc.ResultSetMetaData;
 import com.mysql.jdbc.Statement;
 
 /**
- * 带标签体的标签
+ * 带标属性的标签
  * 
  * @Description
  * @author Weiliang Hu
