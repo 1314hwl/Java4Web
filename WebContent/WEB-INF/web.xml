@@ -18,35 +18,4 @@
 	</servlet> <servlet-mapping> <servlet-name>firstServlet</servlet-name> <url-pattern>/aa</url-pattern> 
 	</servlet-mapping> </web-app> -->
 <!-- 注解模式 -->
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	version="3.1">
-	<!-- <filter>
-		<filter-name>log</filter-name>
-		<filter-class>com.cn.hwl.filter.LogFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>log</filter-name>
-		<servlet-name>*</servlet-name>
-	</filter-mapping> -->
-
-	<!-- jsp 2.0新语法 jsp-config -->
-
-	<!-- <jsp-config>
-		<jsp-property-group>
-			<url-pattern>/jsp2/*</url-pattern>
-			忽略表达式语言
-			<el-ignored>true</el-ignored>
-			页面编码字符集
-			<page-encoding>UTF-8</page-encoding>
-			不容许使用java 脚本
-			<scripting-invalid>true</scripting-invalid>
-			隐式导入页面头
-			<include-prelude>/jsp2/top.jspf</include-prelude>
-			隐式导入页面尾
-			<include-coda>/jsp2/bottom.jspf</include-coda>
-		</jsp-property-group>
-	</jsp-config> -->
-
-</web-app>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1"/>

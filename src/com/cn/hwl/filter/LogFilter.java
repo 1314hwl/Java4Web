@@ -23,15 +23,15 @@ public class LogFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
-        ServletContext servletContext = this.mFilterConfig.getServletContext();
-        long before = System.currentTimeMillis();
-        System.out.println("开始过滤...");
-        HttpServletRequest httpServletRequest = (HttpServletRequest) request;
-        System.out.println("filter 已经截取到用户请求的地址：" + httpServletRequest.getServletPath());
-        chain.doFilter(request, response);
-        long after = System.currentTimeMillis();
-        System.out.println("过滤结束");
-        System.out.println("请求被定位到：" + ((HttpServletRequest) request).getRequestURI() + "  所花的时间为：" + (after - before));
+//        ServletContext servletContext = this.mFilterConfig.getServletContext();
+//        long before = System.currentTimeMillis();
+//        System.out.println("开始过滤...");
+//        HttpServletRequest httpServletRequest = (HttpServletRequest) request;
+//        System.out.println("filter 已经截取到用户请求的地址：" + httpServletRequest.getServletPath());
+//        chain.doFilter(request, response);
+//        long after = System.currentTimeMillis();
+//        System.out.println("过滤结束");
+//        System.out.println("请求被定位到：" + ((HttpServletRequest) request).getRequestURI() + "  所花的时间为：" + (after - before));
     }
 
     @Override

@@ -25,7 +25,7 @@ import javax.servlet.http.HttpSession;
  * @author Hero
  * @date 2017年12月18日 下午10:14:41
  */
-@WebFilter(filterName = "/authority", urlPatterns = "/*", initParams = {
+@WebFilter(filterName = "/authority", asyncSupported=true ,urlPatterns = "/*", initParams = {
         @WebInitParam(name = "encoding", value = "UTF-8"), @WebInitParam(name = "loginPage", value = "/login.jsp") })
 public class AuthorityFilter implements Filter {
 
